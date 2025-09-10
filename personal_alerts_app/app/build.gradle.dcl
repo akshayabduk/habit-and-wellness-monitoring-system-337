@@ -12,5 +12,10 @@ androidApplication {
         implementation(project(":bmi"))
         implementation(project(":ai"))
         implementation(project(":notifications"))
+
+        // UI dependencies for traditional Views and Material components
+        implementation("androidx.appcompat:appcompat:1.7.0")
+        implementation("com.google.android.material:material:1.12.0")
+        implementation("androidx.fragment:fragment-ktx:1.8.3")
     }
 }

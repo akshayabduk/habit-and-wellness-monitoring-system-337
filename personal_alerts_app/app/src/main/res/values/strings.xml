@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Sample Declarative Gradle Android App</string>
+    <string name="dashboard_title">Dashboard</string>
+    <string name="reminders_title">Reminders</string>
+    <string name="bmi_title">BMI Calculator</string>
+    <string name="ai_title">AI Insights</string>
+    <string name="profile_title">Profile</string>
+
+    <string name="bmi_weight_hint">Weight (kg)</string>
+    <string name="bmi_height_hint">Height (cm)</string>
+    <string name="bmi_calculate">Calculate BMI</string>
+
+    <string name="ai_input_hint">Ask for tips (e.g., hydration, sleep)...</string>
+    <string name="ai_send">Send</string>
+
+    <string name="reminder_time_hint">Time (HH:mm)</string>
+    <string name="reminder_type_hint">Type</string>
+    <string name="reminder_enabled">Enabled</string>
+    <string name="reminder_save">Save</string>
+
+    <string name="profile_age_hint">Age</string>
+    <string name="profile_height_hint">Height (cm)</string>
+    <string name="profile_weight_hint">Weight (kg)</string>
+    <string name="profile_goals_hint">Goals (comma separated)</string>
+    <string name="profile_save">Save Profile</string>
 </resources>
