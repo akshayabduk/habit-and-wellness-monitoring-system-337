@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors -->
+    <color name="color_primary">#1976D2</color> <!-- Primary: Blue 700 -->
+    <color name="color_on_primary">#FFFFFF</color>
+    <color name="color_primary_variant">#115293</color> <!-- Darker primary for status/variants -->
+
+    <color name="color_secondary">#424242</color> <!-- Secondary: Grey 800 -->
+    <color name="color_on_secondary">#FFFFFF</color>
+    <color name="color_secondary_variant">#2C2C2C</color>
+
+    <color name="color_accent">#FFEB3B</color> <!-- Accent: Yellow 500 -->
+    <color name="color_on_accent">#000000</color>
+
+    <!-- Surface/Background -->
+    <color name="color_background">#FAFAFA</color>
+    <color name="color_surface">#FFFFFF</color>
+    <color name="color_on_surface">#212121</color>
+    <color name="color_outline">#E0E0E0</color>
+
+    <!-- Progress specific -->
+    <color name="hydration_progress">#42A5F5</color>
+    <color name="exercise_progress">#66BB6A</color>
+    <color name="progress_track">#E0E0E0</color>
+
+    <!-- Cards -->
+    <color name="card_stroke">#E6E6E6</color>
+    <color name="card_ripple">#1F000000</color>
+</resources>

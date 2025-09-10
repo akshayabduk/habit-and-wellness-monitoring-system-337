@@ -1,53 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/profile_root"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/color_background">
 
     <LinearLayout
-        android:padding="12dp"
+        android:padding="16dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
+            style="@style/TextAppearance.PersonalAlerts.Headline"
             android:text="@string/profile_title"
-            android:textStyle="bold"
-            android:textSize="20sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <EditText
-            android:id="@+id/input_age"
-            android:hint="@string/profile_age_hint"
-            android:inputType="number"
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="12dp"
+            app:strokeColor="@color/card_stroke"
+            app:strokeWidth="1dp">
 
-        <EditText
-            android:id="@+id/input_height_cm"
-            android:hint="@string/profile_height_hint"
-            android:inputType="numberDecimal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/input_weight_kg"
-            android:hint="@string/profile_weight_hint"
-            android:inputType="numberDecimal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/input_age"
+                    android:hint="@string/profile_age_hint"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
 
-        <EditText
-            android:id="@+id/input_goals"
-            android:hint="@string/profile_goals_hint"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/input_height_cm"
+                    android:hint="@string/profile_height_hint"
+                    android:inputType="numberDecimal"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
 
-        <Button
-            android:id="@+id/btn_save_profile"
-            android:text="@string/profile_save"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/input_weight_kg"
+                    android:hint="@string/profile_weight_hint"
+                    android:inputType="numberDecimal"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/input_goals"
+                    android:hint="@string/profile_goals_hint"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/btn_save_profile"
+                    android:text="@string/profile_save"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
 </ScrollView>

@@ -1,8 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.PersonalAlerts" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="colorPrimary">#1976D2</item>
-        <item name="colorSecondary">#424242</item>
-        <item name="colorAccent">#FFEB3B</item>
+
+    <!-- Base App Theme -->
+    <style name="Theme.PersonalAlerts" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Color palette -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_variant</item>
+
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+        <item name="colorSecondaryVariant">@color/color_secondary_variant</item>
+
+        <item name="colorAccent">@color/color_accent</item>
+
+        <item name="android:windowBackground">@color/color_background</item>
+        <item name="android:textColorPrimary">@color/color_on_surface</item>
+
+        <!-- Material components mapping for surfaces -->
+        <item name="materialCardViewStyle">@style/Widget.PersonalAlerts.CardView</item>
+        <item name="materialButtonStyle">@style/Widget.PersonalAlerts.Button</item>
+
+        <!-- Bottom navigation theming -->
+        <item name="bottomNavigationStyle">@style/Widget.PersonalAlerts.BottomNavigationView</item>
+
+        <!-- Typography -->
+        <item name="textAppearanceHeadline6">@style/TextAppearance.PersonalAlerts.Headline</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.PersonalAlerts.Body</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.PersonalAlerts.Caption</item>
     </style>
+
+    <!-- BottomNavigationView style -->
+    <style name="Widget.PersonalAlerts.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="android:background">@color/color_surface</item>
+        <item name="itemIconTint">@color/bottom_nav_item_tint</item>
+        <item name="itemTextColor">@color/bottom_nav_item_tint</item>
+        <item name="itemRippleColor">@color/card_ripple</item>
+    </style>
+
+    <!-- Card style -->
+    <style name="Widget.PersonalAlerts.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/color_surface</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="strokeColor">@color/card_stroke</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="rippleColor">@color/card_ripple</item>
+    </style>
+
+    <!-- Button style -->
+    <style name="Widget.PersonalAlerts.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/color_primary</item>
+        <item name="android:textColor">@color/color_on_primary</item>
+        <item name="rippleColor">@color/card_ripple</item>
+    </style>
+
+    <!-- Typography -->
+    <style name="TextAppearance.PersonalAlerts.Headline" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_on_surface</item>
+    </style>
+
+    <style name="TextAppearance.PersonalAlerts.Subtitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_secondary</item>
+    </style>
+
+    <style name="TextAppearance.PersonalAlerts.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/color_on_surface</item>
+    </style>
+
+    <style name="TextAppearance.PersonalAlerts.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textColor">@color/color_secondary</item>
+    </style>
+
 </resources>

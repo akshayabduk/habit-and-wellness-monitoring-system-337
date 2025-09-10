@@ -1,52 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/reminders_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="12dp"
+    android:background="@color/color_background"
+    android:padding="16dp"
     android:orientation="vertical">
 
     <TextView
+        style="@style/TextAppearance.PersonalAlerts.Headline"
         android:text="@string/reminders_title"
-        android:textStyle="bold"
-        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <EditText
-        android:id="@+id/input_time"
-        android:hint="@string/reminder_time_hint"
-        android:inputType="time"
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="12dp"
+        app:strokeColor="@color/card_stroke"
+        app:strokeWidth="1dp">
 
-    <EditText
-        android:id="@+id/input_type"
-        android:hint="@string/reminder_type_hint"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <CheckBox
-        android:id="@+id/input_enabled"
-        android:text="@string/reminder_enabled"
-        android:checked="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/input_time"
+                android:hint="@string/reminder_time_hint"
+                android:inputType="time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/btn_save_reminder"
-        android:text="@string/reminder_save"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/input_type"
+                android:hint="@string/reminder_type_hint"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:id="@+id/input_enabled"
+                android:text="@string/reminder_enabled"
+                android:checked="true"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btn_save_reminder"
+                android:text="@string/reminder_save"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
     <TextView
         android:layout_marginTop="12dp"
         android:text="Existing Reminders"
-        android:textStyle="bold"
+        style="@style/TextAppearance.PersonalAlerts.Subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
     <ListView
         android:id="@+id/list_reminders"
+        android:layout_marginTop="4dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
